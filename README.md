@@ -1,3 +1,5 @@
 ## Recently added Feature
 
-`- Dynamic Rental system\ns`
+`
+[x] Dynamic Rental system
+`
