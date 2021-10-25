@@ -1,6 +1,6 @@
 #if defined DONT_REMOVE
 
-    » Xyronite Gamemode from Basic UCP SA:MP Roleplay Gamemode
+    Â» Xyronite Gamemode from Basic UCP SA:MP Roleplay Gamemode
     
     > Credits: - Kalcor (For the SA:MP)
 			   - Y_Less (For the YSI, sscanf, foreach)
@@ -15,7 +15,7 @@
     > NOTE: Please don't remove the credits!
     
     
-    ===================== » Changelog ========================
+    ===================== Â» Changelog ========================
     
     > Added Owner Vehicle System
     > Added Vehicle Insurance System
@@ -2209,6 +2209,7 @@ static ResetVariable(playerid)
 	PlayerData[playerid][pListitem] = -1;
 	PlayerData[playerid][pAttempt] = 0;
 	PlayerData[playerid][pCalling] = INVALID_PLAYER_ID;
+	PlayerData[playerid][pSpawned] = false;
 	return 1;
 }
 
@@ -3194,7 +3195,7 @@ static ShowBusinessMenu(playerid)
 	return 1;
 }
 	            
-/* » Commands */
+/* Â» Commands */
 
 
 CMD:biz(playerid, params[])
@@ -3714,7 +3715,7 @@ CMD:createbiz(playerid, params[])
 	SendServerMessage(playerid, "You have successfully created business ID: %d.", id);
 	return 1;
 }
-/* » Server Timer */
+/* Â» Server Timer */
 
 ptask EnergyUpdate[30000](playerid)
 {
